@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d6d3d3;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcfeff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(243, 238, 238, 0.1);
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #0a66c2;
+}
+
+.logo-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+}
+
+.search-bar i {
+    margin-right: 5px;
+    color: gray;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px;
+    width: 250px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 50px;
+    color: #0a66c2;
+}
+
+.nav-icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(31, 29, 29);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-icons img {
+    width: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-icons div:hover img {
+    transform: scale(1.35);
+}
+
+.nav-icons div:hover span {
+    color: #0a66c2;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+}
+
+.profile i {
+    font-size: 20px;
+    color: black;
+}
+
+.profile img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.profile img:hover {
+    transform: scale(1.1);
+    border: 2px solid #0a66c2;
+}
+.leftside{
+    text-align: left;
+   background-color : white;
+    padding: 10px;
+}
+.middle{
+    background-color : white;
+    padding: 10px;
+    
+}
+.middlebot{
+    width: 50%;
+    height: 10px;
+  
+}
+.middlebot img{
+    border-radius: 8px;
+}
+.post{
+    width: 5%;
+    height: 1%;
+    display: flex;
+}
+.post div{
+    text-align: center;
+    display: inline;
+    width: auto;
+}
+.rightside{
+    width: 30%;
+    height: 1%;
+
+}
+.rightside img{
+    width: 5;
+    height: 1%;
+}
+.content{
+    text-align: center;
+    display: block;
+
+}
+.post-icon{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    margin-bottom: auto;
+   
+}

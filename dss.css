@@ -1,0 +1,11 @@
+p{
+    margin-top: 30px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    border-top: 2px solid red;
+    border-left: 1px solid yellow;
+    border-right: 1px dashed blue;
+    border-bottom: 2px dashed green;
+    text-align: center;
+      
+}
