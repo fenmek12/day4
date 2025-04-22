@@ -1,0 +1,176 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        
+        body {
+            background: url('https://assets.nflxext.com/ffe/siteui/vlv3/9d3533b2-0e2b-40b2-95e0-ecd7979cc88b/a3873901-5b7c-46eb-b9fa-12fea5197bd3/IN-en-20240311-popsignuptwoweeks-perspective_alpha_website_large.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        
+        .container {
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 60px 68px;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 450px;
+            z-index: 2;
+            color: #fff;
+        }
+        
+        .logo {
+            color: #e50914;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 32px;
+            margin-bottom: 28px;
+            font-weight: 500;
+        }
+        
+        .input-group {
+            margin-bottom: 16px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background: #333;
+            color: #fff;
+        }
+        
+        input:focus {
+            outline: none;
+            background: #454545;
+        }
+        
+        input::placeholder {
+            color: #8c8c8c;
+        }
+        
+        button {
+            width: 100%;
+            background-color: #e50914;
+            color: white;
+            border: none;
+            padding: 16px;
+            font-size: 16px;
+            font-weight: 500;
+            border-radius: 4px;
+            margin-top: 24px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #f6121d;
+        }
+        
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            color: #8c8c8c;
+            font-size: 14px;
+        }
+        
+        .divider::before, .divider::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #8c8c8c;
+        }
+        
+        .divider::before {
+            margin-right: 16px;
+        }
+        
+        .divider::after {
+            margin-left: 16px;
+        }
+        
+        .sign-in-code {
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 20px;
+            cursor: pointer;
+            color: #fff;
+        }
+        
+        .forgot-password {
+            text-align: center;
+            margin-bottom: 16px;
+            color: #b3b3b3;
+            cursor: pointer;
+        }
+        
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            color: #b3b3b3;
+        }
+        
+        .checkbox-group input {
+            width: auto;
+            margin-right: 8px;
+            accent-color: #737373;
+        }
+        
+        .signup-link {
+            color: #737373;
+        }
+        
+        .signup-link a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .recaptcha {
+            font-size: 13px;
+            color: #8c8c8c;
+            margin-top: 16px;
+        }
+        
+        .recaptcha a {
+            color: #0071eb;
+            text-decoration: none;
+        }
+        
+        .recaptcha a:hover {
+            text-decoration: underline;
+        }
+  
