@@ -40,6 +40,8 @@
     color: blue;
     text-align: left;
     margin: 10px;
+    justify-content: space-evenly;
+   
 }
 .cont a:hover{
     text-decoration: underline;
