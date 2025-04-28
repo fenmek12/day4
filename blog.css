@@ -9,7 +9,8 @@
     text-align: center;
     padding: 10px;
     text-transform: uppercase;
-    z-index: 1000;
+    margin: 0%;
+    z-index: 100000000000;
 }
 .blog img{
     width: 30px;
@@ -22,13 +23,21 @@
     top: 60px;
     left: 0;
     width: 150px;
+
+
+
+
+
+
+
     height: calc(100% - 60px);
     background-color: rgb(255, 255, 255);
-    color: white;
-    text-align: center;
+    color:white;
     padding-top: 20px;
     border:1px solid black;
     margin: 0%;
+    justify-self: start;
+   
   
 }
 .cont h2{
@@ -37,14 +46,20 @@
 
 }
 .cont a{
-    color: blue;
-    text-align: left;
-    margin: 10px;
-    justify-content: space-evenly;
+    color: rgb(0, 0, 0);
+    margin: 0%;
+    justify-content:start;
+    text-decoration: none;
+    padding: 0px;
+    font-size: 20px;
+
+    
    
 }
 .cont a:hover{
-    text-decoration: underline;
+text-transform: capitalize;
+text-transform: 2s;
+    color: #0004ff;
 }
 
 .container {
@@ -55,15 +70,45 @@
     gap: 1rem;
     padding: 20px;
 }
+.obj{
+position: absolute;
+right: 0;
+width: 88%;
+height: 60px;
+margin-bottom: 0px;
 
+}
+.section {
+  position:relative ;
+    margin-bottom: 50px;
+    padding: 10px;
+    color: white;
+    background-color: #333;
+    border-radius: 5px;
+    min-height: 60px;
+}
 .item {
     position: sticky;
-    margin: 10px;
+   top: 70px;
     padding: 10px;
-    width: 100%;
     background-color: #333;
     color: white;
     border-radius: 5px;
     min-height: 60px;
+    border-top: 2px;
+    z-index: 100;
 }
+#intro {
+    position: sticky;
+   top: 70px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    min-height: 60px;
+    border-top: 2px;
+    z-index: 100;
+
+}
+
 
