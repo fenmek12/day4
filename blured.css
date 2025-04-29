@@ -58,4 +58,24 @@
       color: #eee;
       font-size: 16px;
     }
-  
+    .btn {
+      width: 84px;
+      height: 84px;
+      margin-left: 80px;
+      margin-top: 20px;
+      background-color: #000000;
+      color: white;
+      border-radius: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      transition: 2s;
+    }
+    .btn:hover{
+      transform: scaleX(1.2);
+      color: rgb(0, 0, 0);
+      background: #ffffff;
+    }
