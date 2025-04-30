@@ -49,12 +49,13 @@ transition: transform 2s;
     margin-top: 150px;
     margin-left: 600px;
 justify-content: center;
-    background-color: blueviolet;
+    background-color: rgb(11, 102, 240);
     padding: 10px;
     width: 5%;
     border-radius: 20px;
     color: white;
     transition: transform 2s;
+    
  
 }
 .i1:hover{
