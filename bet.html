@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number and Bet</title>
+    <link rel="stylesheet" href="bet.css">
+</head>
+<body>
+
+    <h1>Guess the Number (1–10) and Place Your Bets!</h1>
+    <div id="c">
+        <div>
+            <label>Player 1 Guess:</label>
+            <input type="number" id="player1Guess" min="1" max="10">
+            <label>Bet:</label>
+            <input type="number" id="player1Bet" min="1">
+        </div>
+
+        <div>
+            <label>Player 2 Guess:</label>
+            <input type="number" id="player2Guess" min="1" max="10">
+            <label>Bet:</label>
+            <input type="number" id="player2Bet" min="1">
+        </div>
+
+        <div>
+            <label>Player 3 Guess:</label>
+            <input type="number" id="player3Guess" min="1" max="10">
+            <label>Bet:</label>
+            <input type="number" id="player3Bet" min="1">
+        </div>
+
+        <button type="button" onclick="checkWinner()">Check Winner</button>
+    <h2 id="result"></h2>
+    </div>
+
+    <script>
+             
+             function checkWinner() {
+            const result = document.getElementById("result");
+            if (result) {
+                result.style.visibility = "hidden";
+            }
+
+            const player1Guess = parseInt(document.getElementById("player1Guess").value);
+            const player2Guess = parseInt(document.getElementById("player2Guess").value);
+            const player3Guess = parseInt(document.getElementById("player3Guess").value);
+
+            const player1Bet = parseInt(document.getElementById("player1Bet").value);
+            const player2Bet = parseInt(document.getElementById("player2Bet").value);
+            const player3Bet = parseInt(document.getElementById("player3Bet").value);
+
+            if (
+                isNaN(player1Guess) || isNaN(player2Guess) || isNaN(player3Guess) ||
+                player1Guess < 1 || player1Guess > 10 ||
+                player2Guess < 1 || player2Guess > 10 ||
+                player3Guess < 1 || player3Guess > 10
+            ) {
+                if (result) {
+                    result.style.visibility = "visible";
+                    result.textContent = "Please enter valid guesses (1-10) for all players.";
+                }
+                return;
+            }
+
+            if (
+                isNaN(player1Bet) || isNaN(player2Bet) || isNaN(player3Bet) ||
+                player1Bet <= 0 || player2Bet <= 0 || player3Bet <= 0
+            ) {
+                if (result) {
+                    result.style.visibility = "visible";
+                    result.textContent = "Please enter valid bets (greater than 0) for all players.";
+                }
+                return;
+            }
+
+            const guesses = [player1Guess, player2Guess, player3Guess];
+            const uniqueGuesses = new Set(guesses);
+            if (uniqueGuesses.size < guesses.length) {
+                if (result) {
+                    result.style.visibility = "visible";
+                    result.textContent = "All players must guess different numbers.";
+                }
+                return;
+            }
+
+            const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+            let winners = [];
+            if (player1Guess === randomNumber) winners.push("Player 1");
+            if (player2Guess === randomNumber) winners.push("Player 2");
+            if (player3Guess === randomNumber) winners.push("Player 3");
+
+            const totalPot = player1Bet + player2Bet + player3Bet;
+
+            if (result) {
+                result.style.visibility = "visible";
+                if (winners.length > 0) {
+                    const share = (totalPot / winners.length).toFixed(2);
+                    result.textContent = `${winners.join(" and ")} won! 😄🎉 Each gets $${share}. (Number was ${randomNumber})`;
+                } else {
+                    result.textContent = `No winners! 😢The number was ${randomNumber}.`;
+                }
+            }
+       }
+     
+     
+    </script>
+
+</body>
+</html>
